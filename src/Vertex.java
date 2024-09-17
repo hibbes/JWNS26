@@ -19,6 +19,8 @@ class Vertex {
     System.out.println(v3);
     System.out.println(v1.length());
     System.out.println(v2.length());
+    System.out.println(v1.equals(v3));
+    System.out.println(v1.equals(v1));
 
   }
 
@@ -70,7 +72,7 @@ class Vertex {
 
  public boolean equals (Object thatObject){
   if(thatObject instanceof Vertex){
-    that Vertex = (Vertex) thatObject;
+    Vertex that  = (Vertex) thatObject;
 
     return this.x == that.x && this.y == that.y;
   }
