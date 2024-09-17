@@ -66,4 +66,11 @@ class Vertex {
 
   }
 
+  public void normalize() {
+    double factor = this.length();
+    x = x / factor;
+    y = y / factor;
+
+  }
+
 }
