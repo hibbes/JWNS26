@@ -10,20 +10,6 @@ class Vertex {
 
   }
 
-  public static void main(String[] args) {
-    Vertex v1 = new Vertex(42, 17);
-    Vertex v2 = new Vertex(0.3, 24.6);
-    Vertex v3 = v1.skalarMult(2);
-
-    System.out.println(v1);
-    System.out.println(v3);
-    System.out.println(v1.length());
-    System.out.println(v2.length());
-    System.out.println(v1.equals(v3));
-    System.out.println(v1.equals(v1));
-
-  }
-
   public double length() {
     return Math.sqrt(x * x + y * y);
   }
@@ -70,14 +56,14 @@ class Vertex {
     return "(" + x + "," + y + ")";
   }
 
- public boolean equals (Object thatObject){
-  if(thatObject instanceof Vertex){
-    Vertex that  = (Vertex) thatObject;
+  public boolean equals(Object thatObject) {
+    if (thatObject instanceof Vertex) {
+      Vertex that = (Vertex) thatObject;
 
-    return this.x == that.x && this.y == that.y;
+      return this.x == that.x && this.y == that.y;
+    }
+    return false;
+
   }
-  return false;
-
- }
 
 }
