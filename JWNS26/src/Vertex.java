@@ -9,21 +9,6 @@ class Vertex {
     this.y = y;
 
   }
-
-  public static void main(String[] args) {
-    Vertex v1 = new Vertex(42, 17);
-    Vertex v2 = new Vertex(0.3, 24.6);
-    Vertex v3 = v1.skalarMult(2);
-
-    System.out.println(v1);
-    System.out.println(v3);
-    System.out.println(v1.length());
-    System.out.println(v2.length());
-    System.out.println(v1.equals(v3));
-    System.out.println(v1.equals(v1));
-
-  }
-
   public double length() {
     return Math.sqrt(x * x + y * y);
   }
@@ -37,13 +22,23 @@ class Vertex {
     y = y * s;
   }
 
-  public Vertex add(Vertex v2) {
-    return new Vertex(x + v2.x, y + v2.y);
+  public Vertex add(Vertex that) {
+    return new Vertex(x + that.x, y + that.y);
   }
 
-  public void addMod(Vertex v2) {
-    x += v2.x;
-    y += v2.y;
+  public Vertex sub(Vertex that){
+    return new Vertex(x - that.x, y - that.y);
+  }
+
+  public double distance(Vertex that){
+    double x_diff = that.x-this.x;
+    double y_diff = that.y-this.y;
+    return Math.sqrt(x_diff * x_diff + y_diff * y_diff);
+  }
+
+  public void addMod(Vertex that) {
+    x += that.x;
+    y += that.y;
 
     // x=x+v2.x; Langform
     // y=y+v2.y;
