@@ -34,7 +34,7 @@ public class GeometricObject {
     }
 
     public GeometricObject(double width, double height) {
-        this(0, 0, height, width);
+        this(0, 0, width, height); // Bug
     }
     public GeometricObject(double x){
         this(x,x);

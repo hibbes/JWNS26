@@ -11,7 +11,6 @@ public class TestGeometricObject {
         System.out.println(o1.equals(o2));
         o2.moveTo(42, 23);
         System.out.println(o2);
-        System.out.println(o2);
         System.out.println(o1.equals(o2));
         System.out.println(o3.contains(new Vertex(10, 3)));
         System.out.println(o4);
