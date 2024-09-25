@@ -6,6 +6,10 @@ public class SimpleOval extends GeometricObject {
         super(pos, width, height);
 
     }
+    
+    public SimpleOval(double x, double y, double width, double height){
+        this(new Vertex(x,y), width, height);
+    }
 
     @Override public String toString() {
         return "SimpleOval: " + super.toString();
