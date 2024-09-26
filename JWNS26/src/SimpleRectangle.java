@@ -10,4 +10,8 @@ public class SimpleRectangle extends GeometricObject {
         this(new Vertex(x, y), width, height);
     }
 
+    @Override
+    public String toString(){
+        return "SimpleRectangle: "+super.toString();
+    }
 }
