@@ -3,8 +3,10 @@ package JWNS26.src;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+
+
 public class FirstPanel extends JPanel {
-    
+    private static String title = "Test";
     @Override
     
     public void paintComponent(java.awt.Graphics g) {
@@ -13,7 +15,7 @@ public class FirstPanel extends JPanel {
     }
 
     public static void main(String[] args){
-            JFrame f = new JFrame();
+            JFrame f = new JFrame(title);
             f.add(new FirstPanel());
            // f.pack();
             f.setVisible(true);
