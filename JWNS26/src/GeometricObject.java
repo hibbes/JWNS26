@@ -1,13 +1,17 @@
 package JWNS26.src;
 
+import java.awt.Color;
+
 public class GeometricObject {
 
     public Vertex pos;
     public double width;
     public double height;
+    public Color color;
 
-    public GeometricObject(Vertex pos, double width, double height) {
+    public GeometricObject(Vertex pos, double width, double height, Color color) {
         this.pos = pos;
+        this.color = color;
 
         if (width < 0) {
             this.width = Math.abs(width);
@@ -25,12 +29,12 @@ public class GeometricObject {
     }
 
     public GeometricObject(double posx, double posy, double width, double height) {
-        this(new Vertex(posx, posy), width, height);
+        this(new Vertex(posx, posy), width, height, new Color(0, 0, 0));
 
     }
 
     public GeometricObject(Vertex pos, double width) {
-        this(pos, width, width);
+        this(pos, width, width, new Color(0, 0, 0));
     }
 
     public GeometricObject(double width, double height) {
