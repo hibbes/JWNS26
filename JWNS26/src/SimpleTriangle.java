@@ -1,9 +1,10 @@
 package JWNS26.src;
+import java.awt.Color;
 
 public class SimpleTriangle extends GeometricObject {
 
-    public SimpleTriangle(Vertex pos, double width) {
-        super(pos, width, Math.sqrt(3) / 2 * width);
+    public SimpleTriangle(Vertex pos, double width, Color color) {
+        super(pos, width, Math.sqrt(3) / 2 * width, color);
     }
 
     public SimpleTriangle(double x, double y, double width) {
