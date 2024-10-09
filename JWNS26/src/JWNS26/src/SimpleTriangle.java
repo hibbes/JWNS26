@@ -1,4 +1,5 @@
 package JWNS26.src;
+
 import java.awt.Color;
 
 public class SimpleTriangle extends GeometricObject {
@@ -17,11 +18,12 @@ public class SimpleTriangle extends GeometricObject {
     }
 
     @Override
-    public double circumference(){
-        return 3*width;
+    public double circumference() {
+        return 3 * width;
     }
+
     @Override
-    public String toString(){
-        return "SimpleTriangle: "+super.toString();
+    public String toString() {
+        return "SimpleTriangle: " + super.toString();
     }
 }

@@ -1,4 +1,5 @@
 package JWNS26.src;
+
 import JWNS26.src.util.ShowInFrame;
 import javax.swing.JPanel;
 
@@ -20,7 +21,6 @@ public class PaintableImage extends JPanel implements Paintable {
 
     public static void main(String[] args) {
         PaintableImage pi = new PaintableImage("test.jpg");
-        System.out.println(pi.mi.get().getHeight(pi));
         ShowInFrame.show(new PaintablePanel(pi));
     }
 

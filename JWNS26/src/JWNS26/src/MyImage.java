@@ -1,14 +1,15 @@
 package JWNS26.src;
 
 import java.awt.Image;
-import java.awt.Toolkit;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+import java.awt.image.BufferedImage;
+
 public class MyImage {
     private String name;
-    private Image img = null;
+    private BufferedImage img = null;
 
     public MyImage(String name) {
         this.name = name;
